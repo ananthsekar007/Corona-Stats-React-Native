@@ -35,7 +35,7 @@ export default class Splash extends Component {
     return (
       <View
         style={{
-          backgroundColor: '#ECEBEB ',
+          backgroundColor: '#D6D6D6',
           flex: 1,
         }}>
         <View style={styles.imageContainer}>
