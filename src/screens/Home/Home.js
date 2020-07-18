@@ -28,7 +28,8 @@ export default class Home extends Component {
         },
         {
           title: 'Stay Clean!',
-          description: 'Sanitize your hands with hand sanitizers to fight Covid-19!',
+          description:
+            'Sanitize your hands with hand sanitizers to fight Covid-19!',
           image: Sanitize,
         },
         {
@@ -67,10 +68,10 @@ export default class Home extends Component {
             <Text
               style={{
                 marginTop: -40,
-                fontFamily: "BubblegumSans-Regular",
+                fontFamily: 'BubblegumSans-Regular',
                 fontSize: 22,
-                fontWeight: "bold",
-                marginBottom: 10
+                fontWeight: 'bold',
+                marginBottom: 10,
               }}>
               {item.title}
             </Text>
@@ -78,9 +79,10 @@ export default class Home extends Component {
               style={{
                 width: 150,
                 fontSize: 16,
-                color: "#5C5B5B"
-              }}
-            >{item.description}</Text>
+                color: '#5C5B5B',
+              }}>
+              {item.description}
+            </Text>
           </View>
           <View
             style={{
