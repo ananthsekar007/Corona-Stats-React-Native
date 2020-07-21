@@ -7,6 +7,7 @@ import {
   Dimensions,
   ActivityIndicator,
 } from 'react-native';
+import {CommonActions} from '@react-navigation/native';
 import image from './../../../assets/images/app_logo.png';
 
 const {width: WIDTH, height: HEIGHT} = Dimensions.get('window');
@@ -24,6 +25,12 @@ export default class Splash extends Component {
       isLoading: true,
     });
     setTimeout(() => {
+      this.props.navigation.dispatch(
+        CommonActions.reset({
+          index: 1,
+          routes: [{name: 'Home'}],
+        }),
+      );
       this.props.navigation.navigate('Home');
       this.setState({
         isLoading: false,

@@ -117,7 +117,7 @@ export default class Home extends Component {
         </View>
         <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center'}}>
           <Carousel
-            layout={'stack'}
+            layout={'default'}
             ref={(ref) => (this.carousel = ref)}
             data={this.state.data}
             sliderWidth={350}
@@ -136,9 +136,10 @@ const styles = StyleSheet.create({
     fontFamily: 'AlfaSlabOne-Regular',
     fontSize: 25,
     margin: 20,
+    marginBottom: 0
   },
   infoIcon: {
     marginLeft: WIDTH - 50,
-    top: -55,
+    top: -35,
   },
 });
